@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+
+  </style>
+</head>
+
+<body class="md:flex md:flex-col md:justify-center">
+
+  <header class="my-14 flex justify-center md:mt-0">
+    <img src="./images/logo.svg" alt="">
+  </header>
+
+  <div class="md:flex md:justify-center">
+    <main id="main" class="bg-white p-8 grid gap-5 md:flex md:max-w-3xl rounded-t-3xl md:rounded-3xl">
+      <div class="md:w-3/6">
+        <div class="mb-6">
+          <h2 class="my-1 font-bold">Bill</h2>
+          <input type="number" id="bill" class="very-light-green w-full p-2 text-end">
+        </div>
+
+        <div class="mb-6">
+          <h2 class="my-1 font-bold">Select Tip %</h2>
+          <div id="buttons" value="0" class="grid grid-cols-2 md:grid-cols-3 gap-5 text-2xl">
+            <button id="button5" value="5" class="dark-green rounded-md text-white h-12">5%</button>
+            <button id="button10" value="10" class="dark-green rounded-md text-white h-12">10%</button>
+            <button id="button15" value="15" class="dark-green rounded-md text-white h-12">15%</button>
+            <button id="button25" value="25" class="dark-green rounded-md text-white h-12">25%</button>
+            <button id="button50" value="50" class="dark-green rounded-md text-white h-12">50%</button>
+            <input type="number" id="custom" placeholder="CUSTOM"
+              class="text-center very-light-green text-end pe-3 text-xl">
+          </div>
+        </div>
+
+
+        <div class="mb-6">
+          <div class="flex justify-between">
+            <h2 class="my-1 font-bold">Number of People</h2>
+            <h2 id="warning" class="my-1"></h2>
+          </div>
+          <input type="number" placeholder="1" id="person" class="very-light-green w-full p-2 text-end">
+        </div>
+      </div>
+
+      <div class="dark-green p-4 md:p-10 rounded-xl md:w-3/6 md:grid break-words">
+        <div class="grid grid-cols-2 mb-3 mt-4">
+          <div class="text-white">
+            <h2 class="text-white text-lg font-bold">Tip Amount</h2>
+            <p class="opacity-50">/ person</p>
+          </div>
+          <div>
+            <p id="tipPerson" class="text-end text-3xl pt-1 text-light-green"></p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 mb-3">
+          <div class="text-white">
+            <h2 class="text-white text-lg font-bold">Total</h2>
+            <p class="opacity-50">/ person</p>
+          </div>
+          <div>
+            <p id="tipTotal" class="text-end text-3xl pt-1 text-light-green"></p>
+          </div>
+        </div>
+
+        <button id="reset"
+          class="text-center text-2xl rounded-md text-dark-green w-full md:h-14 py-2 light-green mt-6 md:self-end">Reset</button>
+      </div>
+    </main>
+  </div>
+  <script defer src="./script.js"></script>
+
+</body>
+
+</html>

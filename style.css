@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  background: rgb(197,228,231);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input{
+  padding: 4px;
+}
+#bill{
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 8px;
+}
+
+#person{
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 8px;
+}
+/* #person:focus{
+  border-color: red;
+} */
+
+#warning{
+  color: red;
+}
+#custom::placeholder {
+  color: rgb(0,71,75);
+}
+
+.dark-green{
+  background: rgb(0,71,75);
+}
+.text-dark-green{
+  color: rgb(0,71,75);
+}
+
+.light-green{
+  background-color: rgb(38,194,173);
+}
+.text-light-green{
+  color: rgb(38,194,173);
+}
+.very-light-green{
+  background: rgb(243,248,251);
+}
+.text-very-light-green{
+  color: rgb(243,248,251);
+}
+
+button{
+  color: white;
+}
+button:focus{
+  color: rgb(0,71,75);
+  background-color: rgb(38,194,173);
+}
+
+#reset:focus{
+  color: rgb(0,71,75);
+  background-color: rgb(13,104,109);
+}
+h1{
+  color: rgb(0,71,75)
+}
+h2{
+  color: rgb(0,71,75);
+  font-size: larger;
+  font-weight: 900;
+}
